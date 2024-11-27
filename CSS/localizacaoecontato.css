@@ -1,0 +1,176 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cabeçalho */
+#header {
+  background-color: #EBBE29;
+  padding: 20px; /* Aumentando o padding para espaçamento */
+  color: black;
+  text-align: center;
+  font-size: 90px;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10; /* Garante que o cabeçalho fique acima do conteúdo */
+}
+
+@media (max-width: 768px) {
+  #header {
+      font-size: 50px; /* Reduz o tamanho da fonte para telas menores */
+      padding: 15px; /* Menos padding */
+  }
+}
+
+@media (max-width: 480px) {
+  #header {
+      font-size: 40px; /* Fonte ainda menor em telas de celular */
+      padding: 10px;
+  }
+}
+
+/* Subcabeçalho */
+.subcabecalho {
+ text-align: center;
+  margin-top: 180px;
+  height: 100px;
+  color: #ddd;
+  font-size: xx-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color:dimgray;
+}
+
+@media (max-width: 768px) {
+  .subcabecalho {
+      font-size: x-large; /* Reduz o tamanho da fonte em telas médias */
+      margin-top: 120px; /* Ajusta a margem para um bom espaçamento */
+  }
+}
+
+@media (max-width: 480px) {
+  .subcabecalho {
+      font-size: large; /* Ajusta para uma fonte menor em celulares */
+      margin-top: 100px;
+  }
+}
+
+/* Divs de conteúdo */
+.div1, .div2, .div3 {
+  padding: 20px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.div1 {
+  background-color: rgb(167, 165, 165);
+}
+
+.div2 {
+  font-size: x-large;
+  background-color: rgb(224, 223, 223);
+  color: #4b4a4a;
+}
+
+.div3 {
+  background-color: #EBBE29;
+}
+
+.div1 img, .div2 img {
+  max-width: 100%; /* Imagens responsivas */
+  height: auto;
+}
+
+/* Menu Dropup no Rodapé */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #EBBE29;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  height: 107px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Menu */
+.dropbtn {
+  background-color: #EBBE29;
+  border: none;
+}
+
+.dropup {
+  font-size: x-large;
+  position: relative;
+  display: inline-block;
+}
+
+.dropup-content {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  background-color: #F0CD5C;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropup-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropup-content a:hover {
+  background-color: #ddd;
+}
+
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+.dropup:hover .dropbtn {
+  background-color: #F0CD5C;
+}
+
+/* Ajustes para ícones do rodapé */
+.icones {
+  display: flex;
+  padding: 16px;
+  width: 100%;
+  justify-content: space-around;
+
+}
+
+.icones a img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Responsividade: Consultas de Mídia */
+@media (max-width: 768px) {
+  /* Ajustes para tablets */
+  .icones a img {
+      width: 35px;
+      height: 35px; /* Reduz o tamanho dos ícones */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajustes para celulares */
+  .icones a img {
+      width: 40px;
+      height: 40px; /* Reduz ainda mais o tamanho dos ícones */
+  }
+}

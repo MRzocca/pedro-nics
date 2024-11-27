@@ -1,1 +1,1 @@
-# pedro-nics
+# Nics
